@@ -289,12 +289,22 @@ Using the vowelCounter function below do the following:
   HINT - you may need to study tomorrow's content on arrays 
   HINT - try looking up the .includes() method
 */
-
+const vowels = ['a', 'e', 'i', 'o', 'u'];
 
 function vowelCounter(str) {
     /*add your code here*/
+    let vowelCounter = 0;
+    let letters = str.toLowerCase();
+    for(let letter of letters) {
+      if(vowels.includes(letter)) {
+        vowelCounter++
+      }
+    }
+    return vowelCounter;
     
 }
+
+vowelCounter('Hello');
 
 
 
